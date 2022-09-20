@@ -1,0 +1,255 @@
+  body{
+      margin:0;
+      height:100vh;
+  }
+ .grid-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr 1fr;
+    grid-template-rows: 4fr 3fr 2fr ;
+    height: 100vh;
+    margin: 2em;
+ }
+ main{
+     grid-column-start:1;
+     grid-column-end:2;
+     grid-row-start: 1;
+     grid-row-end: 4;
+     background:url('../Images/elegant.png')no-repeat;
+     background-size: cover;
+ }
+ section.trust{
+     grid-column-start:2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-size: xx-large;
+     text-align: center;
+     color: pink;
+ }
+ section.trust ul{
+     display: none;
+     font-size: medium;
+ }
+ :hover section.trust ul{
+     background-color: lightpink;
+     border-radius: 10px;
+     opacity: 0.4;
+     font-size: medium;
+     color: black;
+     display: block;
+ }
+ section.navigation{
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start:1 ;
+     grid-row-end: 3;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-size: medium;
+     text-align: right;
+     color: rgb(105, 102, 102);
+ }
+ section.navigation li{
+     display: none;
+ }
+ :hover section.navigation li{
+    background-color: lightpink;
+    border-radius: 10px;
+    opacity: 0.4;
+    font-size: medium;
+    color: black;
+    display: block;
+ }
+ section.hire{
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 3;
+     grid-row-end: 4;
+ }
+button{
+    border-radius: 5px;
+    color: gray;
+    margin-left: 120px;
+    
+}
+section.home{
+   grid-column-start: 1; 
+   grid-column-end: 2;
+   grid-row-start: 1;
+   grid-row-end: 2;
+   color: lightpink;
+   font-size: xx-large;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+section.text{
+    grid-column-start: 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-family:monospace;
+    font-size: medium;
+}
+section.nav{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+section.butterfly{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background:url(../Images/butter.jpg) no-repeat;
+    background-size: cover;
+}
+section.myimg{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2 ;
+    background:url(../Images/me5_n.jpg) no-repeat;
+    background-size: auto;
+    opacity: 95%;
+}
+section.home2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: lightpink;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+section.Nav2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: larger;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+   
+}
+section.flower{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background:url(../Images/mental\ health.jpg)no-repeat;
+    background-size: auto;
+    
+}
+section.info{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: lightpink;
+    text-align: right;
+    color: black;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 40%;
+    border-radius: 10%;
+}
+section.home3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: lightpink;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+section.Nav3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;  
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
